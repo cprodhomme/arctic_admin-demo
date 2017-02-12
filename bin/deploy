@@ -1,0 +1,4 @@
+#!/bin/sh -ex
+
+git push git@heroku.com:arctic-admin.git origin/master:master
+heroku run rake db:migrate --app arctic-admin --exit-code

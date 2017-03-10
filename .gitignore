@@ -13,3 +13,5 @@
 tmp/
 vendor/
 log/
+
+.DS_Store

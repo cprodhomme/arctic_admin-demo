@@ -34,7 +34,8 @@ gem 'sdoc', '~> 0.4.0', group: :do
 # gem 'capistrano-rails', group: :development
 gem 'activeadmin', github: 'activeadmin'
 gem "font-awesome-rails"
-gem 'arctic_admin', '~> 1.1.1'
+gem 'arctic_admin', '~> 1.2.1'
+# gem 'arctic_admin', path: '../arctic_admin'
 gem 'devise'
 
 group :development, :test do

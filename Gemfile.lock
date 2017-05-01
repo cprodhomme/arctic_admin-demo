@@ -57,7 +57,7 @@ GEM
       tzinfo (~> 1.1)
     arbre (1.1.1)
       activesupport (>= 3.0.0)
-    arctic_admin (1.2.2)
+    arctic_admin (1.2.4)
       font-awesome-rails
       jquery-rails
     arel (6.0.4)
@@ -225,7 +225,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
-  arctic_admin (~> 1.2.2)
+  arctic_admin (~> 1.2.4)
   byebug
   coffee-rails (~> 4.1.0)
   devise

@@ -12,7 +12,7 @@ ActiveAdmin.register Order do
     column :reference
     column :amount
     column :state do |order|
-      status_tag(order.state)
+      status_tag(order.state) if order.state.present?
     end
     column :created_at
     column :updated_at

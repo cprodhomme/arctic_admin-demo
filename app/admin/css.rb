@@ -1,5 +1,7 @@
 ActiveAdmin.register_page "CSS" do
   content do
+    h2 'Buttons'
+
     button 'small button', class: 'small button'
     button 'button', class: 'button'
     button 'large button', class: 'large button'

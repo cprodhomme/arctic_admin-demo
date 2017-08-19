@@ -1,6 +1,6 @@
 ActiveAdmin.register Book do
   menu parent: "Bookshop"
-  permit_params :name, :state, :user
+  permit_params :name, :state, :user_id
 
   form do |f|
     f.inputs do

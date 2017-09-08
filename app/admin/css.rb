@@ -1,7 +1,7 @@
 ActiveAdmin.register_page "CSS" do
   content do
-    a '<i class="fa fa-github" aria-hidden="true"></i> arctic_admin'.html_safe, href: 'https://github.com/cle61/arctic_admin', target: '_blank', class: 'button link-github'
-    a '<i class="fa fa-github" aria-hidden="true"></i> arctic_admin-demo'.html_safe, href: 'https://github.com/cle61/arctic_admin-demo', target: '_blank', class: 'button link-github-demo'
+    a 'arctic_admin', href:"https://github.com/cle61/arctic_admin", class: "github-button", 'data-size': "large", 'data-show-count': "true", 'aria-label': "Star cle61/arctic_admin on GitHub"
+    a 'arctic_admin-demo', href:"https://github.com/cle61/arctic_admin-demo", class: "github-button", 'data-size': "large", 'data-show-count': "true", 'aria-label': "Star cle61/arctic_admin-demo on GitHub"
 
     h2 'Buttons'
 
@@ -30,5 +30,7 @@ ActiveAdmin.register_page "CSS" do
         end
       end
     end
+
+    script :async, :defer, src: "https://buttons.github.io/buttons.js"
   end
 end

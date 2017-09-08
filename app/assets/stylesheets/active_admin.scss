@@ -1,6 +1,28 @@
-//@import "active_admin/mixins";
-//@import "active_admin/base";
-
 @import "font-awesome";
 // $primary-color: #2dbb43;
 @import "arctic_admin";
+
+.link-github {
+  background-color: #2dbb43;
+
+  &:hover {
+    background-color: lighten(#2dbb43, 10%);
+  }
+
+  &:active, &:focus {
+    background-color: darken(#2dbb43, 10%); 
+  }
+}
+
+.link-github-demo {
+  background-color: #fafbfc;
+  color: #24292e;
+
+  &:hover {
+    background-color: lighten(#fafbfc, 10%);
+  }
+
+  &:active, &:focus {
+    background-color: darken(#fafbfc, 10%);
+  }
+}

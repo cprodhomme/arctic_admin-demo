@@ -1,10 +1,10 @@
 ActiveAdmin.register Book do
   menu parent: "Bookshop"
-  permit_params :name, :state, :user
+  permit_params :name, :state, :user_id
 
   form do |f|
     f.inputs do
-      f.input :user, input_html: { required: true }
+      f.input :user, input_html: { required: true, value: current_user.id }
       f.input :name
       f.input :state
     end

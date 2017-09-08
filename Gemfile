@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :do
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin'
 gem "font-awesome-rails"
 gem 'arctic_admin', '1.2.8'
 # gem 'arctic_admin', path: '../arctic_admin'

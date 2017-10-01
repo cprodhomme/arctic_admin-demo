@@ -4,7 +4,9 @@ ActiveAdmin.register Book do
 
   form do |f|
     f.inputs do
-      f.input :user, input_html: { required: true, value: current_user.id }
+      f.input :user, as: :select,
+                     collection: User.pluck(:email, :id),
+                     input_html: { required: true, value: current_user.id }
       f.input :name
       f.input :state
     end

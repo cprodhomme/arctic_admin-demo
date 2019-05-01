@@ -27,8 +27,8 @@ ActiveAdmin.register Book do
           column :state
           column :created_at     
           column do |order|
-            span link_to 'View', admin_order_path(order), class: 'small button action'
-            span link_to 'Edit', edit_admin_order_path(order), class: 'small button action'
+            span link_to 'View', order_path(order), class: 'small button action'
+            span link_to 'Edit', edit_order_path(order), class: 'small button action'
           end     
         end
       end

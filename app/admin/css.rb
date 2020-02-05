@@ -3,6 +3,7 @@ ActiveAdmin.register_page "CSS" do
     a 'arctic_admin', href:"https://github.com/cle61/arctic_admin", class: "github-button", 'data-size': "large", 'data-show-count': "true", 'aria-label': "Star cle61/arctic_admin on GitHub"
     a 'arctic_admin-demo', href:"https://github.com/cle61/arctic_admin-demo", class: "github-button", 'data-size': "large", 'data-show-count': "true", 'aria-label': "Star cle61/arctic_admin-demo on GitHub"
 
+    hr
     h2 'Buttons'
 
     button 'small button', class: 'small button'
@@ -14,9 +15,9 @@ ActiveAdmin.register_page "CSS" do
       div "<button class='button'>"
       div "<button class='large button'>"
     end
-
+    br
+    hr
     h2 'Tabs'
-
     tabs do
       tab :active do
         table_for 'Lorem Ipsum' do

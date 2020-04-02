@@ -24,6 +24,7 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    active_material (1.4.2)
     activeadmin (2.7.0)
       arbre (~> 1.2, >= 1.2.1)
       formtastic (~> 3.1)
@@ -35,6 +36,13 @@ GEM
       ransack (~> 2.1, >= 2.1.1)
       sassc-rails (~> 2.1)
       sprockets (>= 3.0, < 4.1)
+    activeadmin_addons (1.7.1)
+      active_material
+      railties
+      require_all (~> 1.5)
+      sass
+      select2-rails (~> 4.0)
+      xdan-datetimepicker-rails (~> 2.5.1)
     activejob (5.2.4.2)
       activesupport (= 5.2.4.2)
       globalid (>= 0.3.6)
@@ -188,6 +196,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rdoc (4.3.0)
+    require_all (1.5.0)
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
@@ -214,6 +223,8 @@ GEM
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    select2-rails (4.0.3)
+      thor (~> 0.14)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -225,7 +236,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    thor (1.0.1)
+    thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.10)
     turbolinks (5.2.1)
@@ -245,12 +256,16 @@ GEM
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
+    xdan-datetimepicker-rails (2.5.4)
+      jquery-rails
+      rails (>= 3.2.16)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   activeadmin
+  activeadmin_addons
   arctic_admin
   bootsnap (>= 1.1.0)
   byebug

@@ -31,8 +31,10 @@ gem 'sdoc', '~> 0.4.0', group: :do
 # gem 'capistrano-rails', group: :development
 gem 'activeadmin'
 gem 'arctic_admin'
-# gem 'arctic_admin', path: '../arctic_admin'
+#gem 'arctic_admin', path: '../arctic_admin'
+gem 'activeadmin_addons'
 gem 'devise'
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false

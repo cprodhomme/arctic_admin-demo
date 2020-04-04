@@ -1,4 +1,3 @@
 class Book < ActiveRecord::Base
-  belongs_to :user
-  validates :name, :user, presence: true
+  validates :title, :author, :publisher, :genre, presence: true
 end

@@ -273,4 +273,8 @@ ActiveAdmin.setup do |config|
   meta_tags_options = { viewport: 'width=device-width, initial-scale=1' }
   config.meta_tags = meta_tags_options
   config.meta_tags_for_logged_out_pages = meta_tags_options
+
+  config.footer =
+    'Hosted by <a href="https://scalingo.com" target="_blank">Scalingo</a>'
+      .html_safe
 end
